@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/HajoAhoMantila/io-ts-builder.svg?style=svg)](https://circleci.com/gh/HajoAhoMantila/io-ts-builder)
+
 # io-ts-builder
 Builder implementation for use with io-ts.
 
