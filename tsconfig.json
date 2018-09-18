@@ -4,15 +4,12 @@
     "module": "CommonJS",
     
     "moduleResolution": "Node",
-    "sourceMap": true,
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "removeComments": false,
     "strict": true,
-    "declaration": false
+    "declaration": true,
+
+    "outDir": "./dist"
   },
   "include": [
     "src/**/*.ts",
-    "tests/**/*.ts"
   ]
 }

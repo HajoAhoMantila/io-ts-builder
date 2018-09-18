@@ -1,6 +1,7 @@
 {
   "name": "io-ts-builder",
   "repository": "https://github.com/HajoAhoMantila/io-ts-builder.git",
+  "author": "Hajo Aho-Mantila <hans.joachim.aho.mantila@gmail.com>",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -9,8 +10,8 @@
     "lint": "tslint src/**/*.ts tests/**/*.ts",
     "prepublishOnly": "rm -rf dist && tsc --declaration --outDir dist"
   },
-  "main": "./dist/src/index.js",
-  "types": "./dist/src/index.d.ts",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "jest": {
     "transform": {
       "^.+\\.tsx?$": "ts-jest"

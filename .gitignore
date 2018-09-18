@@ -61,3 +61,4 @@ typings/
 .next
 
 test_coverage_dir
+dist
