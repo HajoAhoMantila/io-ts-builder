@@ -25,7 +25,12 @@ jobs:
       - run:
           name: Run tests
           command: yarn test
-
+      - run:
+          name: Run linter
+          command: yarn lint
+      - run:
+          name: Run depcheck
+          command: yarn depcheck
       - save_cache:
           paths:
             - node_modules

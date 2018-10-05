@@ -8,6 +8,7 @@
     "build": "tsc",
     "test": "jest",
     "lint": "tslint src/**/*.ts tests/**/*.ts",
+    "depcheck": "depcheck --ignores @types/jest,prettier,ts-jest,tslint-config-prettier,tslint-plugin-prettier",
     "prepublishOnly": "rm -rf dist && tsc --declaration --outDir dist"
   },
   "main": "dist/index.js",
@@ -28,6 +29,7 @@
   },
   "devDependencies": {
     "@types/jest": "23.3.3",
+    "depcheck": "^0.6.11",
     "jest": "23.6.0",
     "prettier": "1.14.3",
     "ts-jest": "23.10.3",

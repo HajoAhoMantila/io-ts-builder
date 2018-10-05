@@ -1,7 +1,8 @@
 [![CircleCI](https://circleci.com/gh/HajoAhoMantila/io-ts-builder.svg?style=svg)](https://circleci.com/gh/HajoAhoMantila/io-ts-builder)
 
 # io-ts-builder
-Builder implementation for use with io-ts.
+
+Builder implementation for use with io-ts. Lets you create valid objects (optionally starting from a template object) using a fluent API.
 
 ## Credits
 
