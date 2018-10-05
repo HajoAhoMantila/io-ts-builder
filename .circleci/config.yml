@@ -29,8 +29,11 @@ jobs:
           name: Run linter
           command: yarn lint
       - run:
-          name: Run depcheck
+          name: Run depcheck (checks for unused or undeclared dependencies)
           command: yarn depcheck
+      - run:
+          name: Run retire (known vulnerabilities scanner)
+          command: yarn retire
       - save_cache:
           paths:
             - node_modules

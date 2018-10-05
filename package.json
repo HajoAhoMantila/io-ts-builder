@@ -8,6 +8,7 @@
     "build": "tsc",
     "test": "jest",
     "lint": "tslint src/**/*.ts tests/**/*.ts",
+    "retire": "retire",
     "depcheck": "depcheck --ignores @types/jest,prettier,ts-jest,tslint-config-prettier,tslint-plugin-prettier",
     "prepublishOnly": "rm -rf dist && tsc --declaration --outDir dist"
   },
@@ -32,6 +33,7 @@
     "depcheck": "^0.6.11",
     "jest": "23.6.0",
     "prettier": "1.14.3",
+    "retire": "^1.6.2",
     "ts-jest": "23.10.3",
     "tslint": "5.11.0",
     "tslint-config-prettier": "1.15.0",
