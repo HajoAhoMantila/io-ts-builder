@@ -682,7 +682,7 @@ delegates@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/delegates/-/delegates-1.0.0.tgz#84c6e159b81904fdca59a0ef44cd870d31250f9a"
 
-depcheck@^0.6.11:
+depcheck@0.6.11:
   version "0.6.11"
   resolved "https://registry.yarnpkg.com/depcheck/-/depcheck-0.6.11.tgz#6b616f2cf8c44ddcfdc5d7c7f7759bc53b479262"
   dependencies:
@@ -2711,7 +2711,7 @@ ret@~0.1.10:
   version "0.1.15"
   resolved "https://registry.yarnpkg.com/ret/-/ret-0.1.15.tgz#b8a4825d5bdb1fc3f6f53c2bc33f81388681c7bc"
 
-retire@^1.6.2:
+retire@1.6.2:
   version "1.6.2"
   resolved "https://registry.yarnpkg.com/retire/-/retire-1.6.2.tgz#05f1b032f4c35d8438a4864bc7af8aa17eb135b7"
   dependencies:
