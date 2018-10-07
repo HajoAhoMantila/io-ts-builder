@@ -30,10 +30,10 @@
   },
   "devDependencies": {
     "@types/jest": "23.3.3",
-    "depcheck": "^0.6.11",
+    "depcheck": "0.6.11",
     "jest": "23.6.0",
     "prettier": "1.14.3",
-    "retire": "^1.6.2",
+    "retire": "1.6.2",
     "ts-jest": "23.10.3",
     "tslint": "5.11.0",
     "tslint-config-prettier": "1.15.0",
