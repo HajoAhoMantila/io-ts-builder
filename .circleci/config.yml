@@ -34,6 +34,7 @@ jobs:
       - run:
           name: Run retire (known vulnerabilities scanner)
           command: yarn retire
+
       - save_cache:
           paths:
             - node_modules
@@ -42,6 +43,7 @@ jobs:
       - persist_to_workspace:
           root: ~/repo
           paths: .
+
   deploy:
     <<: *defaults
     steps:
@@ -53,9 +55,35 @@ jobs:
       - run:
           name: Publish package
           command: yarn publish
+
+  check-dependencies:
+    <<: *defaults  
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "package.json" }}
+          # fallback to using the latest cache if no exact match is found
+          - v1-dependencies-
+
+      - run: yarn install
+      - run:
+          name: Run retire (known vulnerabilities scanner)
+          command: yarn retire
+
+      - save_cache:
+          paths:
+            - node_modules
+          key: v1-dependencies-{{ checksum "package.json" }}
+          
+      - persist_to_workspace:
+          root: ~/repo
+          paths: .          
             
 workflows:
   version: 2
+
   test-deploy:
     jobs:
       - test:
@@ -70,3 +98,13 @@ workflows:
               only: /^v.*/
             branches:
               ignore: /.*/
+
+  check-dependencies-nightly:
+    triggers:
+      - schedule:
+          cron: "11 0 * * *"  
+          filters:
+            branches:
+              only: master
+    jobs:
+      - check-dependencies
