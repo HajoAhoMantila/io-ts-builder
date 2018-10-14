@@ -90,14 +90,15 @@ workflows:
           filters:
             tags:
               only: /^v.*/
-      - deploy:
-          requires:
-            - test
-          filters:
-            tags:
-              only: /^v.*/
-            branches:
-              ignore: /.*/
+      # Package is currently published manually
+      # - deploy:
+      #     requires:
+      #       - test
+      #     filters:
+      #       tags:
+      #         only: /^v.*/
+      #       branches:
+      #         ignore: /.*/
 
   check-dependencies-nightly:
     triggers:
