@@ -2,7 +2,7 @@
   "name": "io-ts-builder",
   "repository": "https://github.com/HajoAhoMantila/io-ts-builder.git",
   "author": "Hajo Aho-Mantila <hans.joachim.aho.mantila@gmail.com>",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "license": "MIT",
   "scripts": {
     "build": "tsc",
