@@ -32,8 +32,8 @@ jobs:
           name: Run depcheck (checks for unused or undeclared dependencies)
           command: yarn depcheck
       - run:
-          name: Run retire (known vulnerabilities scanner)
-          command: yarn retire
+          name: Run npm audit (check for dependencies with vulnerabilities)
+          command: npm audit
 
       - save_cache:
           paths:
@@ -69,8 +69,8 @@ jobs:
 
       - run: yarn install
       - run:
-          name: Run retire (known vulnerabilities scanner)
-          command: yarn retire
+          name: Run npm audit (check for dependencies with vulnerabilities)
+          command: npm audit
 
       - save_cache:
           paths:

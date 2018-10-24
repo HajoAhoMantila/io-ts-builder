@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - (Nothing yet)
 
+## [0.2.1] - 2018-10-24
+## Changed
+- use npm audit instead of retire.js for dependency checking
+
 ## [0.2.0] - 2018-10-14
 ## Added
 - Add feature to provide a template object
