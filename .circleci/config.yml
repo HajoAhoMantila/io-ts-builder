@@ -31,10 +31,6 @@ jobs:
       - run:
           name: Run depcheck (checks for unused or undeclared dependencies)
           command: yarn depcheck
-      - run:
-          name: Run npm audit (check for dependencies with vulnerabilities)
-          command: npm audit
-
       - save_cache:
           paths:
             - node_modules
