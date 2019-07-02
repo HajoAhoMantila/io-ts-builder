@@ -40,6 +40,6 @@
     "typescript": "3.5.2"
   },
   "dependencies": {
-    "io-ts": "1.10.2"
+    "io-ts": "1.10.4"
   }
 }
